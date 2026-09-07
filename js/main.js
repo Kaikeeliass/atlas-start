@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ATLAS START 21 DIAS — GSAP Animations
  * ScrollTrigger + entrada de elementos + parallax suave
  */

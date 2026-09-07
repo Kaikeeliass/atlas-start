@@ -1,8 +1,8 @@
-﻿/* ===================================================
-   ATLAS START 21 DIAS — Design System
+/* ===================================================
+   ATLAS START 21 DIAS â€” Design System
    =================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
 
 /* === RESET & BASE === */
 *, *::before, *::after {
@@ -50,14 +50,14 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   background-color: var(--bg-base);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -83,7 +83,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -102,9 +102,9 @@ body {
 }
 
 .section-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
   color: var(--text-primary);
   margin-bottom: 20px;
@@ -139,9 +139,9 @@ body::before {
   gap: 10px;
   background: linear-gradient(135deg, #D95757, #8E3038);
   color: #050608;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.02em;
   padding: 18px 40px;
   border-radius: 99px;
@@ -183,9 +183,9 @@ body::before {
   gap: 10px;
   background: transparent;
   color: var(--accent);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.02em;
   padding: 16px 36px;
   border-radius: 99px;
@@ -236,9 +236,9 @@ body::before {
   gap: 8px;
   background: linear-gradient(135deg, #D95757, #8E3038);
   color: #050608;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.85rem;
-  font-weight: 800;
+  font-weight: 600;
   padding: 10px 22px;
   border-radius: 99px;
   text-decoration: none;
@@ -296,7 +296,7 @@ body::before {
   background: rgba(217, 87, 87, 0.1);
   border: 1px solid rgba(217, 87, 87, 0.25);
   color: var(--accent);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -320,9 +320,9 @@ body::before {
 }
 
 .hero-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(2.8rem, 5.5vw, 5rem);
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.06;
   letter-spacing: -0.03em;
   color: var(--text-primary);
@@ -365,7 +365,7 @@ body::before {
 }
 
 .hero-stat-number {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 900;
   color: var(--accent);
@@ -437,7 +437,7 @@ body::before {
 }
 
 .hfc-value {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   color: var(--accent);
@@ -604,9 +604,9 @@ body::before {
 }
 
 .what-card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 8px;
   line-height: 1.3;
@@ -677,9 +677,9 @@ body::before {
 }
 
 .benefit-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 4px;
 }
@@ -727,9 +727,9 @@ body::before {
 }
 
 .bhb-text-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 4px;
 }
@@ -785,7 +785,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 900;
   color: var(--accent);
@@ -816,9 +816,9 @@ body::before {
 }
 
 .how-step-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 10px;
 }
@@ -887,7 +887,7 @@ body::before {
 }
 
 .pricing-product-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -913,7 +913,7 @@ body::before {
 }
 
 .pricing-currency {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-secondary);
@@ -921,7 +921,7 @@ body::before {
 }
 
 .pricing-amount {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 5rem;
   font-weight: 900;
   color: var(--accent);
@@ -930,7 +930,7 @@ body::before {
 }
 
 .pricing-cents {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: var(--accent);
@@ -1040,7 +1040,7 @@ body::before {
 }
 
 .testimonial-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -1104,7 +1104,7 @@ body::before {
   border: none;
   cursor: pointer;
   color: var(--text-primary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-align: left;
@@ -1174,9 +1174,9 @@ body::before {
 }
 
 .final-cta-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(2.2rem, 5vw, 4rem);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin-bottom: 24px;
@@ -1270,9 +1270,9 @@ body::before {
 }
 
 .obrigado-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--text-primary);
   margin-bottom: 20px;
@@ -1324,7 +1324,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 0.9rem;
 }
@@ -1350,7 +1350,7 @@ body::before {
 
 .obrigado-step-label strong {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 2px;
@@ -1408,7 +1408,7 @@ body::before {
 }
 
 .navbar-logo span, .footer-logo span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -1416,7 +1416,7 @@ body::before {
 }
 
 
-/* === MÁSCARAS DE IMAGEM PARA KEVIN === */
+/* === MíSCARAS DE IMAGEM PARA KEVIN === */
 .hero-image-wrap img, .what-image-frame img {
   border-radius: var(--radius-xl);
   -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
@@ -1591,6 +1591,9 @@ body::before {
   .pricing-amount { font-size: 2.5rem; }
   .final-cta-title { font-size: 1.8rem; }
 }
+
+
+
 
 
 
