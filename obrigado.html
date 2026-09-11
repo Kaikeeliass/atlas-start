@@ -1,286 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Inscrição confirmada no Desafio Atlas Start 21 Dias! Preencha o formulário para recebermos suas informações e criar sua estratégia personalizada." />
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="icon" href="assets/images/Prancheta 4@4x.png" type="image/png">
-  <title>Inscrição Confirmada — Desafio Atlas Start 21 Dias</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inscrição confirmada no Desafio Atlas Start. Preencha agora o formulário inicial.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#090a0d">
+  <title>Inscrição confirmada — Atlas Start</title>
+  <link rel="icon" href="/desafio-atlas-start/assets/images/Prancheta%204@4x.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/desafio-atlas-start/css/style.css">
-    <link rel="shortcut icon" href="/desafio-atlas-start/assets/images/Prancheta 4@4x.png" type="image/x-icon">
-
   <style>
-    .confetti-canvas {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 999;
+    .thanks-page {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 48px 0;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(239,90,96,.16), transparent 30rem),
+        var(--bg);
     }
-
-    .obrigado-divider {
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-mid));
-      border-radius: 99px;
-      margin: 0 auto 40px;
-      position: relative;
-      z-index: 1;
+    .thanks-card {
+      width: min(calc(100% - 32px), 680px);
+      padding: clamp(30px, 7vw, 62px);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-lg);
+      background: rgba(19,22,28,.94);
+      box-shadow: var(--shadow);
+      text-align: center;
     }
-
-    .obrigado-alert {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(217, 87, 87,0.1);
-      border: 1px solid rgba(217, 87, 87,0.25);
-      color: var(--accent);
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 10px 22px;
-      border-radius: 99px;
-      margin-bottom: 32px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .obrigado-footer-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-top: 24px;
-      transition: color 0.3s ease;
-      position: relative;
-      z-index: 1;
-    }
-
-    .obrigado-footer-link:hover { color: var(--accent); }
-
-    .grid-lines {
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(217, 87, 87, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(217, 87, 87, 0.03) 1px, transparent 1px);
-      background-size: 60px 60px;
-      pointer-events: none;
+    .thanks-brand { margin-bottom: 35px; }
+    .thanks-badge { display: inline-flex; align-items: center; gap: 9px; padding: 9px 14px; border: 1px solid rgba(239,90,96,.4); border-radius: 999px; color: var(--accent-strong); font-size: .76rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+    .thanks-badge::before { content: "✓"; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: var(--accent); color: #170506; }
+    .thanks-card h1 { margin: 22px 0 18px; font-family: "Anton", sans-serif; font-size: clamp(2.5rem, 8vw, 4.7rem); font-weight: 400; line-height: .98; letter-spacing: -.035em; }
+    .thanks-card h1 span { color: var(--accent); }
+    .thanks-intro { max-width: 520px; margin: 0 auto; font-size: 1.05rem; }
+    .thanks-steps { display: grid; gap: 10px; margin: 34px 0; text-align: left; }
+    .thanks-step { display: grid; grid-template-columns: 36px 1fr; gap: 14px; align-items: center; padding: 15px 16px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.025); }
+    .thanks-step > span { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: rgba(239,90,96,.13); color: var(--accent-strong); font-weight: 900; }
+    .thanks-step.done > span { background: var(--accent); color: #170506; }
+    .thanks-step strong { display: block; font-size: .95rem; }
+    .thanks-step small { display: block; margin-top: 2px; color: var(--text-soft); font-size: .78rem; }
+    .thanks-note { margin: 18px 0 0; font-size: .78rem; }
+    @media (max-width: 480px) {
+      .thanks-page { padding: 16px 0; }
+      .thanks-card { padding-inline: 22px; }
+      .thanks-brand { margin-bottom: 26px; }
     }
   </style>
 </head>
 <body>
+  <main class="thanks-page">
+    <section class="thanks-card" aria-labelledby="thanks-title">
+      <a class="brand thanks-brand" href="./index.html" aria-label="Nutri Kevin — voltar à página inicial">
+        <img src="/desafio-atlas-start/assets/images/Prancheta%204@4x.png" alt="" width="42" height="42">
+        <span><strong>Nutri.</strong>Kevin</span>
+      </a>
+      <br>
+      <div class="thanks-badge">Pagamento confirmado</div>
+      <h1 id="thanks-title">Inscrição <span>confirmada!</span></h1>
+      <p class="thanks-intro">Agora precisamos conhecer sua rotina para preparar a estratégia dos seus 21 dias. O formulário é a próxima etapa.</p>
 
-<canvas class="confetti-canvas" id="confetti-canvas"></canvas>
-<div class="grid-lines"></div>
-
-<main class="obrigado-page" id="obrigado-page">
-  <div class="obrigado-bg"></div>
-
-  <div class="obrigado-alert" id="ob-alert">
-    <span><i class="bi bi-check-circle-fill"></i></span>
-    Pagamento confirmado com sucesso
-  </div>
-
-  <div class="obrigado-icon" id="ob-icon"><i class="bi bi-patch-check"></i></div>
-
-  <h1 class="obrigado-title" id="ob-title">
-    Inscrição <span>confirmada!</span>
-  </h1>
-
-  <div class="obrigado-divider" id="ob-divider"></div>
-
-  <p class="obrigado-text" id="ob-text">
-    Você deu o primeiro passo para iniciar sua transformação. Agora precisamos conhecer melhor você para criar sua estratégia personalizada dos 21 dias.
-  </p>
-
-  <div class="obrigado-steps" id="ob-steps">
-    <div class="obrigado-step" id="obs-1">
-      <div class="obrigado-step-done"><i class="bi bi-check-lg"></i></div>
-      <div class="obrigado-step-label">
-        <strong>Inscrição realizada</strong>
-        Pagamento confirmado com sucesso
+      <div class="thanks-steps" aria-label="Etapas da inscrição">
+        <div class="thanks-step done"><span>✓</span><div><strong>Inscrição realizada</strong><small>Pagamento confirmado com sucesso</small></div></div>
+        <div class="thanks-step"><span>2</span><div><strong>Preencher o formulário</strong><small>Conte seus objetivos, rotina e preferências</small></div></div>
+        <div class="thanks-step"><span>3</span><div><strong>Receber sua estratégia</strong><small>Orientações personalizadas para os 21 dias</small></div></div>
       </div>
-    </div>
 
-    <div class="obrigado-step" id="obs-2">
-      <div class="obrigado-step-num">2</div>
-      <div class="obrigado-step-label">
-        <strong>Preencher o formulário</strong>
-        Conte seus objetivos e preferências
-      </div>
-    </div>
-
-    <div class="obrigado-step" id="obs-3">
-      <div class="obrigado-step-num" style="background: rgba(217, 87, 87,0.1); color: var(--accent); border: 1px solid rgba(217, 87, 87,0.25);">3</div>
-      <div class="obrigado-step-label">
-        <strong>Receber sua estratégia</strong>
-        Personalizada para seus 21 dias
-      </div>
-    </div>
-  </div>
-
-  <a href="https://tally.so/r/QKNNe8" class="btn-primary obrigado-cta-btn" id="ob-cta-btn" target="_blank" rel="noopener">
-    Preencher formulário agora
-    <span class="arrow">→</span>
-  </a>
-
-  <a href="https://atlas.com.br" class="obrigado-footer-link" id="ob-atlas-link" target="_blank" rel="noopener">
-    Conhecer o site principal Atlas ↗
-  </a>
-</main>
-
-<!-- GSAP CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script>
-  /* === GSAP Entrance Animations === */
-  const tl = gsap.timeline({ delay: 0.3 });
-
-  tl
-    .fromTo('#ob-alert',
-      { opacity: 0, y: -20 },
-      { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }
-    )
-    .fromTo('#ob-icon',
-      { opacity: 0, scale: 0.3 },
-      { opacity: 1, scale: 1, duration: 0.7, ease: 'back.out(1.8)' },
-      '-=0.2'
-    )
-    .fromTo('#ob-title',
-      { opacity: 0, y: 35 },
-      { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' },
-      '-=0.4'
-    )
-    .fromTo('#ob-divider',
-      { opacity: 0, scaleX: 0 },
-      { opacity: 1, scaleX: 1, duration: 0.5, ease: 'power3.out', transformOrigin: 'center' },
-      '-=0.3'
-    )
-    .fromTo('#ob-text',
-      { opacity: 0, y: 25 },
-      { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' },
-      '-=0.3'
-    )
-    .fromTo('#obs-1, #obs-2, #obs-3',
-      { opacity: 0, x: -30 },
-      { opacity: 1, x: 0, duration: 0.5, stagger: 0.12, ease: 'power3.out' },
-      '-=0.3'
-    )
-    .fromTo('#ob-cta-btn',
-      { opacity: 0, y: 20, scale: 0.95 },
-      { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: 'back.out(1.4)' },
-      '-=0.2'
-    )
-    .fromTo('#ob-atlas-link',
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5 },
-      '-=0.2'
-    );
-
-  /* === CTA Button magnetic effect === */
-  const ctaBtn = document.getElementById('ob-cta-btn');
-  ctaBtn.addEventListener('mousemove', (e) => {
-    const rect = ctaBtn.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) * 0.12;
-    const dy = (e.clientY - cy) * 0.12;
-    gsap.to(ctaBtn, { x: dx, y: dy, duration: 0.35, ease: 'power2.out' });
-  });
-  ctaBtn.addEventListener('mouseleave', () => {
-    gsap.to(ctaBtn, { x: 0, y: 0, duration: 0.5, ease: 'elastic.out(1, 0.5)' });
-  });
-
-  /* === Confetti Animation === */
-  const canvas = document.getElementById('confetti-canvas');
-  const ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
-
-  const colors = ['#D95757', '#C04848', '#FF8A8A', '#F5F5F2', '#FFA8A8', '#8E3038'];
-  const particles = [];
-
-  class Particle {
-    constructor() {
-      this.reset();
-    }
-    reset() {
-      this.x = Math.random() * canvas.width;
-      this.y = -10;
-      this.size = Math.random() * 7 + 3;
-      this.speedX = (Math.random() - 0.5) * 3;
-      this.speedY = Math.random() * 3 + 1.5;
-      this.color = colors[Math.floor(Math.random() * colors.length)];
-      this.opacity = 1;
-      this.rotation = Math.random() * 360;
-      this.rotationSpeed = (Math.random() - 0.5) * 5;
-      this.shape = Math.random() > 0.5 ? 'rect' : 'circle';
-    }
-    update() {
-      this.x += this.speedX;
-      this.y += this.speedY;
-      this.rotation += this.rotationSpeed;
-      if (this.y > canvas.height + 20) {
-        this.opacity -= 0.02;
-      }
-    }
-    draw() {
-      ctx.save();
-      ctx.globalAlpha = this.opacity;
-      ctx.translate(this.x, this.y);
-      ctx.rotate((this.rotation * Math.PI) / 180);
-      ctx.fillStyle = this.color;
-      if (this.shape === 'rect') {
-        ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size * 0.6);
-      } else {
-        ctx.beginPath();
-        ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);
-        ctx.fill();
-      }
-      ctx.restore();
-    }
-  }
-
-  // Create initial burst of particles
-  let burstCount = 120;
-  for (let i = 0; i < burstCount; i++) {
-    setTimeout(() => {
-      const p = new Particle();
-      p.x = Math.random() * canvas.width;
-      p.speedY = Math.random() * 4 + 2;
-      particles.push(p);
-    }, i * 20);
-  }
-
-  let animFrame;
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach((p, idx) => {
-      p.update();
-      p.draw();
-    });
-    // Remove dead particles
-    for (let i = particles.length - 1; i >= 0; i--) {
-      if (particles[i].opacity <= 0) particles.splice(i, 1);
-    }
-    if (particles.length > 0) {
-      animFrame = requestAnimationFrame(animate);
-    }
-  }
-
-  // Start confetti after 0.6s
-  setTimeout(() => { animate(); }, 600);
-</script>
+      <a class="button button-primary button-full" href="https://tally.so/r/QKNNe8" target="_blank" rel="noopener">Preencher formulário agora <span aria-hidden="true">→</span></a>
+      <p class="thanks-note">Reserve alguns minutos e responda com atenção: suas informações orientam a personalização.</p>
+    </section>
+  </main>
 </body>
 </html>
-
-

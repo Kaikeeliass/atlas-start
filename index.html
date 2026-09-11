@@ -1,526 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Desafio Atlas Start 21 Dias — 21 dias para transformar sua rotina, sua alimentação e construir hábitos que realmente permanecem. Estratégia personalizada, acompanhamento e resultado." />
-  <meta name="theme-color" content="#08090C" />
-  <meta property="og:title" content="Desafio Atlas Start 21 Dias" />
-  <meta property="og:description" content="21 dias para transformar sua rotina, sua alimentação e construir hábitos que realmente permanecem." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="./assets/images/Prancheta 4@4x.png" type="image/png">
-  <title>Desafio Atlas Start 21 Dias — Transforme sua rotina</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desafio Atlas Start: 21 dias de estratégia alimentar personalizada, organização de rotina e acompanhamento para você construir hábitos possíveis.">
+  <meta name="theme-color" content="#090a0d">
+  <meta property="og:title" content="Desafio Atlas Start — 21 dias para sair do improviso">
+  <meta property="og:description" content="Uma estratégia criada para a sua rotina, com alimentação possível e acompanhamento durante 21 dias.">
+  <meta property="og:type" content="website">
+  <title>Desafio Atlas Start — 21 dias para sair do improviso</title>
+  <link rel="icon" href="/desafio-atlas-start/assets/images/Prancheta%204@4x.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/desafio-atlas-start/css/style.css">
-  <link rel="shortcut icon" href="/desafio-atlas-start/assets/images/Prancheta 4@4x.png" type="image/x-icon">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <div class="navbar-inner">
-      <a href="#" class="navbar-logo"><img src="/desafio-atlas-start/assets/images/Prancheta 4@4x.png" alt="KL Logo" class="nav-logo-img"> <span><span style="color: var(--accent);">Nutri</span>.Kevin</span></a>
-      <a href="#pagamento" class="navbar-cta" id="nav-cta">Quero participar →</a>
+  <header class="site-header" id="navbar">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Nutri Kevin — voltar ao início">
+        <img src="/desafio-atlas-start/assets/images/Prancheta%204@4x.png" alt="" width="42" height="42">
+        <span><strong>Nutri.</strong>Kevin</span>
+      </a>
+      <a class="header-cta" href="#inscricao">Quero participar <span aria-hidden="true">→</span></a>
     </div>
-  </div>
-</nav>
+  </header>
 
-<!-- ===== HERO ===== -->
-<section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid-lines"></div>
-  <div class="hero-glow-blob blob-1"></div>
-  <div class="hero-glow-blob blob-2"></div>
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span aria-hidden="true"></span> Inscrições abertas · 21 dias</div>
+          <h1>21 dias para colocar sua <em>rotina no eixo.</em></h1>
+          <p class="hero-lead">O <strong>Desafio Atlas Start</strong> une estratégia alimentar personalizada, organização da rotina e acompanhamento para você construir consistência sem depender de uma dieta impossível.</p>
 
-  <div class="container">
-    <div class="hero-inner">
+          <div class="hero-actions">
+            <a class="button button-primary" href="#inscricao">Quero começar meus 21 dias <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#como-funciona">Ver o desafio por dentro</a>
+          </div>
 
-      <!-- LEFT SIDE -->
-      <div class="hero-content">
-        <div class="hero-badge anim-fade-down" id="hero-badge">
-          <span class="hero-badge-dot"></span>
-          Inscrições abertas · Vagas limitadas
+          <div class="purchase-note" aria-label="Informações da compra">
+            <span>R$ 97</span>
+            <span>Pagamento único</span>
+            <span>Checkout Kiwify</span>
+          </div>
         </div>
 
-        <h1 class="hero-title anim-fade-up" id="hero-title">
-          Desafio
-          <span class="brand">Atlas Start</span>
-          21 Dias
-        </h1>
-
-        <p class="hero-subtitle anim-fade-up" id="hero-subtitle">
-          21 dias para transformar sua rotina, sua alimentação e construir hábitos que realmente permanecem. Com estratégia personalizada e acompanhamento real.
-        </p>
-
-        <div class="hero-actions anim-fade-up" id="hero-actions">
-          <a href="#pagamento" class="btn-primary" id="hero-cta-btn">
-            Quero participar do desafio
-            <span class="arrow">→</span>
-          </a>
-          <a href="#como-funciona" class="btn-secondary">Ver como funciona</a>
-        </div>
-
-        <div class="hero-stats anim-fade-up" id="hero-stats">
-          <div class="hero-stat">
-            <span class="hero-stat-number">21</span>
-            <span class="hero-stat-label">dias de desafio</span>
+        <div class="hero-visual reveal" aria-label="Kevin Lincoln, responsável pelo acompanhamento">
+          <div class="portrait-frame">
+            <img src="/desafio-atlas-start/assets/images/kevin-hero.jpg" alt="Kevin Lincoln segurando um tablet" width="1200" height="1332" fetchpriority="high">
+            <div class="portrait-signature">
+              <span>Acompanhamento</span>
+              <strong>Kevin Lincoln</strong>
+            </div>
           </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">100%</span>
-            <span class="hero-stat-label">personalizado</span>
-          </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">R$97</span>
-            <span class="hero-stat-label">investimento único</span>
+
+          <div class="result-panel">
+            <div class="result-panel-heading">
+              <span>Seu foco por 21 dias</span>
+              <strong>Construir uma base possível</strong>
+            </div>
+            <div class="result-points">
+              <span>Alimentação organizada</span>
+              <span>Rotina sustentável</span>
+              <span>Consistência prática</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT SIDE -->
-      <div class="hero-visual anim-fade-left" id="hero-visual">
-        <div class="hero-image-wrap">
-          <img src="/desafio-atlas-start/assets/images/kevin_desafio.png" alt="Atleta treinando em academia com iluminação verde neon" loading="eager" />
+    </section>
+
+    <section class="section problem-section" id="desafio">
+      <div class="container split-heading reveal">
+        <div>
+          <span class="section-kicker">O desafio de verdade</span>
+          <h2>Você não precisa de mais uma dieta bonita no papel.</h2>
+        </div>
+        <p>Precisa de uma estratégia que considere seus horários, suas preferências e a vida que acontece fora do planejamento.</p>
+      </div>
+
+      <div class="container comparison-grid">
+        <article class="comparison-card comparison-before reveal">
+          <span class="card-label">Antes do Atlas Start</span>
+          <h3>Todo dia começa do zero</h3>
+          <ul>
+            <li>Você decide o que comer só quando a fome chega</li>
+            <li>A rotina aperta e o plano fica para depois</li>
+            <li>Uma semana difícil vira motivo para desistir</li>
+          </ul>
+        </article>
+
+        <article class="comparison-card comparison-after reveal">
+          <span class="card-label">Durante os 21 dias</span>
+          <h3>Você sabe qual é o próximo passo</h3>
+          <ul>
+            <li>Uma estratégia alimentar pensada para você</li>
+            <li>Organização prática para os seus horários</li>
+            <li>Acompanhamento para manter o processo em movimento</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section audience-section" id="para-quem">
+      <div class="container audience-layout">
+        <div class="audience-copy reveal">
+          <span class="section-kicker">Feito para começar</span>
+          <h2>O Atlas Start é para quem quer mudança, mas precisa de direção.</h2>
+          <p>Você não precisa chegar pronto. O desafio foi desenhado para transformar intenção em uma sequência simples de ações ao longo de 21 dias.</p>
+          <a class="text-link" href="#inscricao">Quero fazer parte <span aria-hidden="true">→</span></a>
         </div>
 
-        <div class="hero-floating-card card-1" id="hfc-1">
-          <div class="hfc-label">Duração do desafio</div>
-          <div class="hfc-value">21 Dias</div>
-          <div class="hfc-sub">Estratégia personalizada</div>
-        </div>
-
-        <div class="hero-floating-card card-2" id="hfc-2">
-          <div class="hfc-label">Resultado</div>
-          <div class="hfc-value">Novos hábitos</div>
-          <div class="hfc-sub">Rotina + Alimentação</div>
+        <div class="audience-list">
+          <article class="audience-item reveal">
+            <span>01</span>
+            <div><h3>Para quem vive sem rotina</h3><p>E sente que a alimentação sempre perde espaço quando o dia aperta.</p></div>
+          </article>
+          <article class="audience-item reveal">
+            <span>02</span>
+            <div><h3>Para quem já tentou sozinho</h3><p>E precisa de um plano mais próximo da realidade para manter constância.</p></div>
+          </article>
+          <article class="audience-item reveal">
+            <span>03</span>
+            <div><h3>Para quem quer um ponto de partida</h3><p>Com orientação, prazo definido e passos claros para começar.</p></div>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="section deliverables-section" id="o-que-recebe">
+      <div class="container deliverables-layout">
+        <figure class="food-figure reveal">
+          <img src="/desafio-atlas-start/assets/images/prato-brasileiro-real.jpg" alt="Prato brasileiro real com arroz, feijão, frango grelhado, batata e salada" width="1085" height="961" loading="lazy">
+          <figcaption>
+            <span>Comida de verdade</span>
+            <strong>Estratégia para refeições possíveis — não para pratos de vitrine.</strong>
+          </figcaption>
+        </figure>
+
+        <div class="deliverables-copy reveal">
+          <span class="section-kicker">O que você recebe</span>
+          <h2>Estrutura para agir, não só informação para guardar.</h2>
+          <div class="deliverables-list">
+            <article>
+              <span aria-hidden="true">✓</span>
+              <div><h3>Formulário inicial detalhado</h3><p>Para mapear objetivos, horários, preferências, restrições e contexto.</p></div>
+            </article>
+            <article>
+              <span aria-hidden="true">✓</span>
+              <div><h3>Estratégia alimentar personalizada</h3><p>Orientações construídas a partir das informações que você enviar.</p></div>
+            </article>
+            <article>
+              <span aria-hidden="true">✓</span>
+              <div><h3>Organização da sua rotina</h3><p>Um caminho prático para encaixar as ações no seu dia.</p></div>
+            </article>
+            <article>
+              <span aria-hidden="true">✓</span>
+              <div><h3>Acompanhamento durante o desafio</h3><p>Suporte para dúvidas e orientação ao longo dos 21 dias.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="como-funciona">
+      <div class="container process-heading reveal">
+        <span class="section-kicker">Passo a passo</span>
+        <h2>Do clique ao primeiro dia, você sabe exatamente o que acontece.</h2>
+      </div>
+
+      <div class="container process-grid">
+        <article class="process-step reveal">
+          <span>01</span>
+          <h3>Garanta sua vaga</h3>
+          <p>Finalize sua inscrição pelo checkout seguro da Kiwify.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>02</span>
+          <h3>Conte sobre você</h3>
+          <p>Preencha o formulário com sua rotina, objetivos e preferências.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>03</span>
+          <h3>Receba a estratégia</h3>
+          <p>As orientações são organizadas a partir das suas respostas.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>04</span>
+          <h3>Viva os 21 dias</h3>
+          <p>Coloque o plano em prática com acompanhamento durante o processo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section offer-section" id="inscricao">
+      <div class="container offer-layout">
+        <div class="offer-copy reveal">
+          <span class="section-kicker">Sua próxima decisão</span>
+          <h2>Você não precisa esperar a rotina ficar perfeita para começar.</h2>
+          <p>Comece com a rotina que você tem hoje e construa uma base mais organizada durante os próximos 21 dias.</p>
+          <div class="offer-guarantees">
+            <span>21 dias de desafio</span>
+            <span>Estratégia personalizada</span>
+            <span>Acompanhamento</span>
+          </div>
+        </div>
+
+        <article class="price-card reveal">
+          <div class="price-card-top">
+            <span>Acesso completo</span>
+            <strong>Atlas Start</strong>
+          </div>
+          <div class="price">
+            <span>R$</span><strong>97</strong><sup>,00</sup>
+          </div>
+          <p class="price-note">Pagamento único</p>
+          <ul>
+            <li>Formulário inicial</li>
+            <li>Estratégia alimentar para 21 dias</li>
+            <li>Organização personalizada da rotina</li>
+            <li>Suporte durante o desafio</li>
+          </ul>
+          <a class="button button-primary button-full" href="https://pay.kiwify.com.br/1g3I325" target="_blank" rel="noopener">Participar do Atlas Start <span aria-hidden="true">→</span></a>
+          <small>Pagamento processado com segurança pela Kiwify.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-heading reveal">
+          <span class="section-kicker">Dúvidas frequentes</span>
+          <h2>O que você precisa saber antes de entrar.</h2>
+          <p>Ainda ficou alguma dúvida? Revise as respostas ao lado antes de fazer sua inscrição.</p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-1"><span>Preciso fazer academia para participar?</span><b aria-hidden="true">+</b></button>
+            <div class="faq-answer" id="faq-1"><p>Não. O foco do Atlas Start é alimentação e organização da rotina, independentemente do seu nível atual de atividade física.</p></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-2"><span>A estratégia é igual para todo mundo?</span><b aria-hidden="true">+</b></button>
+            <div class="faq-answer" id="faq-2"><p>Não. As orientações são preparadas com base nas informações que você fornecer sobre objetivos, rotina, preferências e restrições.</p></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-3"><span>Quando recebo o formulário?</span><b aria-hidden="true">+</b></button>
+            <div class="faq-answer" id="faq-3"><p>Após a confirmação do pagamento, você é direcionado para a próxima etapa com o formulário inicial do desafio.</p></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-4"><span>Posso participar começando do zero?</span><b aria-hidden="true">+</b></button>
+            <div class="faq-answer" id="faq-4"><p>Sim. O desafio funciona como um ponto de partida organizado. Quanto mais completas forem suas respostas no formulário, melhor será o direcionamento.</p></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-5"><span>Existe suporte durante os 21 dias?</span><b aria-hidden="true">+</b></button>
+            <div class="faq-answer" id="faq-5"><p>Sim. Você terá acompanhamento para dúvidas e orientações durante o período do desafio.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <span>Dia 1 começa com uma decisão</span>
+        <h2>Transforme intenção em 21 dias de prática.</h2>
+        <a class="button button-primary" href="#inscricao">Quero começar agora <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#inicio" aria-label="Nutri Kevin — voltar ao início">
+        <img src="/desafio-atlas-start/assets/images/Prancheta%204@4x.png" alt="" width="38" height="38">
+        <span><strong>Nutri.</strong>Kevin</span>
+      </a>
+      <p>© 2026 Atlas. Todos os direitos reservados.</p>
+      <p class="footer-meta">Desenvolvido por <a href="https://www.cmkcogit.com.br/" target="_blank" rel="noopener">CMK Cogit</a></p>
     </div>
-  </div>
+  </footer>
 
-  <!-- <div class="scroll-indicator" id="scroll-indicator">
-    <div class="scroll-mouse">
-      <div class="scroll-wheel"></div>
-    </div>
-    <span>Role para baixo</span>
-  </div> -->
-</section>
+  <a class="mobile-cta" href="#inscricao" aria-label="Participar do Atlas Start por 97 reais">
+    <span><small>Atlas Start</small><strong>R$ 97</strong></span>
+    <b>Quero participar <span aria-hidden="true">→</span></b>
+  </a>
 
-<!-- ===== O QUE É O DESAFIO? ===== -->
-<section class="section what-section" id="o-que-e">
-  <div class="container">
-
-    <div class="what-inner">
-      <!-- Image Column -->
-      <div class="what-image-col">
-        <div class="what-accent-bar"></div>
-        <div class="what-image-frame anim-fade-right" id="what-img">
-          <img src="/desafio-atlas-start/assets/images/kevin_2.png" alt="Rotina saudável com alimentação equilibrada e organização diária" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- Text Column -->
-      <div class="what-text">
-        <div class="section-label anim-fade-up" id="what-label">O Desafio</div>
-        <h2 class="section-title anim-fade-up" id="what-title">
-          Não é apenas uma dieta.<br>É um <span>recomeço.</span>
-        </h2>
-        <p class="section-subtitle anim-fade-up" id="what-subtitle">
-          O Atlas Start foi criado para ajudar você a organizar sua rotina, melhorar sua alimentação e criar hábitos mais saudáveis durante 21 dias. Durante o desafio você terá uma estratégia criada especificamente com base nas suas informações, objetivos e necessidades.
-        </p>
-
-        <div class="what-cards" id="what-cards">
-          <div class="what-card anim-scale" id="wc-1">
-            <div class="what-card-icon"><i class="bi bi-calendar-check"></i></div>
-            <div class="what-card-title">21 dias</div>
-            <div class="what-card-text">Um período pensado para iniciar uma nova rotina e criar consistência real.</div>
-          </div>
-          <div class="what-card anim-scale" id="wc-2">
-            <div class="what-card-icon"><i class="bi bi-bullseye"></i></div>
-            <div class="what-card-title">Estratégia personalizada</div>
-            <div class="what-card-text">Sua alimentação será planejada com base nas suas informações e objetivos.</div>
-          </div>
-          <div class="what-card anim-scale" id="wc-3">
-            <div class="what-card-icon"><i class="bi bi-graph-up"></i></div>
-            <div class="what-card-title">Evolução diária</div>
-            <div class="what-card-text">Um processo estruturado para criar consistência e resultados visíveis.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== O QUE VOCÊ RECEBE ===== -->
-<section class="section benefits-section" id="beneficios">
-  <div class="container">
-    <div class="section-label anim-fade-up" id="ben-label">Benefícios</div>
-    <h2 class="section-title anim-fade-up" id="ben-title">
-      Tudo que você recebe<br>ao entrar no <span>desafio</span>
-    </h2>
-
-    <div class="benefits-grid">
-      <div class="benefits-list" id="benefits-list">
-        <div class="benefit-item anim-fade-right" id="bi-1">
-          <div class="benefit-check">
-            <i class="bi bi-check-circle"></i>
-          </div>
-          <div class="benefit-text">
-            <div class="benefit-title">Formulário inicial personalizado</div>
-            <div class="benefit-desc">Preenchimento detalhado para mapear seus objetivos, rotina e preferências.</div>
-          </div>
-        </div>
-
-        <div class="benefit-item anim-fade-right" id="bi-2">
-          <div class="benefit-check">
-            <i class="bi bi-check-circle"></i>
-          </div>
-          <div class="benefit-text">
-            <div class="benefit-title">Estratégia alimentar baseada nos seus objetivos</div>
-            <div class="benefit-desc">Um plano criado especialmente para você, não um modelo genérico.</div>
-          </div>
-        </div>
-
-        <div class="benefit-item anim-fade-right" id="bi-3">
-          <div class="benefit-check">
-            <i class="bi bi-check-circle"></i>
-          </div>
-          <div class="benefit-text">
-            <div class="benefit-title">Organização da sua rotina</div>
-            <div class="benefit-desc">Estruture seu dia para criar espaço para hábitos saudáveis de verdade.</div>
-          </div>
-        </div>
-
-        <div class="benefit-item anim-fade-right" id="bi-4">
-          <div class="benefit-check">
-            <i class="bi bi-check-circle"></i>
-          </div>
-          <div class="benefit-text">
-            <div class="benefit-title">Método para criar consistência</div>
-            <div class="benefit-desc">Aprenda a manter o foco durante os 21 dias e além do desafio.</div>
-          </div>
-        </div>
-
-        <div class="benefit-item anim-fade-right" id="bi-5">
-          <div class="benefit-check">
-            <i class="bi bi-check-circle"></i>
-          </div>
-          <div class="benefit-text">
-            <div class="benefit-title">Acompanhamento durante o desafio</div>
-            <div class="benefit-desc">Suporte para dúvidas e orientações ao longo dos seus 21 dias.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="benefits-visual">
-        <div class="benefits-img-wrap anim-fade-left" id="ben-img">
-          <img src="/desafio-atlas-start/assets/images/healthy_food.jpg" alt="Refeições saudáveis e equilibradas preparadas com ingredientes frescos" loading="lazy" />
-        </div>
-        <div class="benefits-highlight-box anim-fade-up" id="ben-highlight">
-          <div class="bhb-icon"><i class="bi bi-heart-pulse"></i></div>
-          <div>
-            <div class="bhb-text-title">Alimentação que funciona para você</div>
-            <div class="bhb-text-sub">Nada de dietas genéricas. Cada estratégia é criada com base no seu perfil, objetivos e preferências alimentares.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== COMO FUNCIONA ===== -->
-<section class="section how-section" id="como-funciona">
-  <div class="container">
-    <div class="section-label anim-fade-up" id="how-label">Passo a Passo</div>
-    <h2 class="section-title anim-fade-up" id="how-title">
-      Seu caminho dentro do<br><span>Atlas Start</span>
-    </h2>
-
-    <div class="how-timeline" id="how-timeline">
-      <div class="how-step" id="hs-1">
-        <div class="how-step-num">01</div>
-        <div class="how-step-content">
-          <div class="how-step-tag">Início</div>
-          <div class="how-step-title">Faça sua inscrição</div>
-          <p class="how-step-text">Realize o pagamento de forma segura pela plataforma Kiwify. Rápido, simples e protegido. Em segundos você já está dentro do desafio.</p>
-        </div>
-      </div>
-
-      <div class="how-step" id="hs-2">
-        <div class="how-step-num">02</div>
-        <div class="how-step-content">
-          <div class="how-step-tag">Personalização</div>
-          <div class="how-step-title">Preencha seu formulário</div>
-          <p class="how-step-text">Conte seus objetivos, rotina, preferências alimentares, restrições e informações importantes. Quanto mais detalhes, mais personalizada será sua estratégia.</p>
-        </div>
-      </div>
-
-      <div class="how-step" id="hs-3">
-        <div class="how-step-num">03</div>
-        <div class="how-step-content">
-          <div class="how-step-tag">Estratégia</div>
-          <div class="how-step-title">Receba sua estratégia personalizada</div>
-          <p class="how-step-text">Com base nas suas informações, a equipe Atlas cria uma orientação alimentar e de rotina totalmente personalizada para os seus 21 dias.</p>
-        </div>
-      </div>
-
-      <div class="how-step" id="hs-4">
-        <div class="how-step-num">04</div>
-        <div class="how-step-content">
-          <div class="how-step-tag">Transformação</div>
-          <div class="how-step-title">Comece seus 21 dias</div>
-          <p class="how-step-text">Aplique o plano, acompanhe sua evolução e construa os hábitos que vão transformar sua relação com a alimentação e a rotina.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PAGAMENTO ===== -->
-<section class="section pricing-section" id="pagamento">
-  <div class="container">
-    <div class="section-label anim-fade-up" id="price-label">Sua transformação</div>
-    <h2 class="section-title anim-fade-up" id="price-title">
-      Comece agora.<br>21 dias que <span>mudam tudo.</span>
-    </h2>
-    <p class="section-subtitle anim-fade-up" style="margin: 0 auto;" id="price-subtitle">
-      Um investimento único para transformar sua rotina, sua alimentação e criar hábitos que permanecem para sempre.
-    </p>
-
-    <div class="pricing-wrapper">
-      <div class="pricing-card anim-scale" id="pricing-card">
-        <div class="pricing-glow"></div>
-        <div class="pricing-label">Acesso completo</div>
-        <div class="pricing-product-name">Desafio Atlas Start 21 Dias</div>
-
-        <div class="pricing-price-wrap">
-          <div class="pricing-from">Por apenas</div>
-          <div class="pricing-price">
-            <span class="pricing-currency">R$</span>
-            <span class="pricing-amount">97</span>
-            <span class="pricing-cents">,00</span>
-          </div>
-        </div>
-        <div class="pricing-note">Pagamento único · Acesso imediato</div>
-
-        <div class="pricing-perks">
-          <div class="pricing-perk">
-            <span class="pricing-perk-icon"><i class="bi bi-check-lg"></i></span>
-            Formulário inicial personalizado
-          </div>
-          <div class="pricing-perk">
-            <span class="pricing-perk-icon"><i class="bi bi-check-lg"></i></span>
-            Estratégia alimentar para seus 21 dias
-          </div>
-          <div class="pricing-perk">
-            <span class="pricing-perk-icon"><i class="bi bi-check-lg"></i></span>
-            Organização de rotina personalizada
-          </div>
-          <div class="pricing-perk">
-            <span class="pricing-perk-icon"><i class="bi bi-check-lg"></i></span>
-            Método de consistência e hábitos
-          </div>
-          <div class="pricing-perk">
-            <span class="pricing-perk-icon"><i class="bi bi-check-lg"></i></span>
-            Acompanhamento durante o desafio
-          </div>
-        </div>
-
-        <a href="https://pay.kiwify.com.br/1g3I325" class="btn-primary pricing-btn" id="kiwify-cta" target="_blank" rel="noopener">
-          Participar do Atlas Start
-          <span class="arrow">→</span>
-        </a>
-
-        <div class="pricing-security">
-          <span><i class="bi bi-shield-lock" style="font-size: 1.2rem;"></i></span>
-          <span>Pagamento 100% seguro via Kiwify</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== DEPOIMENTOS ===== -->
-<!--
-<section class="section testimonials-section" id="depoimentos">
-  <div class="container">
-    <div class="section-label anim-fade-up" id="test-label">Depoimentos</div>
-    <h2 class="section-title anim-fade-up" id="test-title">
-      Quem já começou essa <span>transformação</span>
-    </h2>
-
-    <div class="testimonials-grid" id="testimonials-grid">
-      <div class="testimonial-card anim-fade-up" id="tc-1">
-        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-        <p class="testimonial-quote">"Em 21 dias eu entendi minha relação com a alimentação de uma forma que nunca tinha conseguido antes. A estratégia foi completamente pensada para minha rotina."</p>
-        <div class="testimonial-author">
-          <img src="./assets/images/avatar_1.jpg" alt="Foto de Camila Souza" class="testimonial-avatar" />
-          <div>
-            <div class="testimonial-name">Camila S.</div>
-            <div class="testimonial-result">Transformou sua rotina em 21 dias</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card anim-fade-up" id="tc-2">
-        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-        <p class="testimonial-quote">"Eu tentei várias dietas antes e nunca conseguia manter. O Atlas Start foi diferente porque a estratégia foi feita para mim. Os 21 dias passaram rápido e os resultados foram reais."</p>
-        <div class="testimonial-author">
-          <img src="./assets/images/avatar_2.jpg" alt="Foto de Rafael M." class="testimonial-avatar" />
-          <div>
-            <div class="testimonial-name">Rafael M.</div>
-            <div class="testimonial-result">Hábitos que ficaram após o desafio</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card anim-fade-up" id="tc-3" style="background: linear-gradient(135deg, rgba(217, 87, 87,0.06) 0%, rgba(18, 21, 27,1) 100%);">
-        <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-        <p class="testimonial-quote">"O acompanhamento fez toda a diferença. Não me senti sozinha no processo. A equipe Atlas estava presente e a estratégia alimentar foi exatamente o que eu precisava."</p>
-        <div class="testimonial-author">
-          <img src="./assets/images/avatar_1.jpg" alt="Foto de Ana Lima" class="testimonial-avatar" />
-          <div>
-            <div class="testimonial-name">Ana L.</div>
-            <div class="testimonial-result">Consistência pela primeira vez</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
-<!-- ===== FAQ ===== -->
-<section class="section faq-section" id="faq">
-  <div class="container">
-    <div class="section-label anim-fade-up" id="faq-label">Dúvidas frequentes</div>
-    <h2 class="section-title anim-fade-up" id="faq-title" style="text-align:center;">
-      Perguntas <span>frequentes</span>
-    </h2>
-
-    <div class="faq-list" id="faq-list">
-
-      <div class="faq-item anim-fade-up" id="faq-1">
-        <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
-          Preciso fazer academia para participar?
-          <div class="faq-icon"><i class="bi bi-plus-lg"></i></div>
-        </button>
-        <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
-          <div class="faq-answer-inner">
-            Não. O Desafio Atlas Start foca em alimentação e rotina. Você não precisa estar matriculado em uma academia. O objetivo é transformar seus hábitos alimentares e criar uma rotina mais saudável, independente do seu nível de atividade física.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item anim-fade-up" id="faq-2">
-        <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
-          O plano alimentar é igual para todos?
-          <div class="faq-icon"><i class="bi bi-plus-lg"></i></div>
-        </button>
-        <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
-          <div class="faq-answer-inner">
-            Não. Cada estratégia é criada individualmente com base nas informações que você fornecer no formulário. Seus objetivos, preferências, restrições alimentares e rotina são considerados na criação do seu plano personalizado.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item anim-fade-up" id="faq-3">
-        <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
-          Quando recebo acesso e começo o desafio?
-          <div class="faq-icon"><i class="bi bi-plus-lg"></i></div>
-        </button>
-        <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
-          <div class="faq-answer-inner">
-            Assim que o pagamento for confirmado, você será redirecionado para a página de confirmação com o link do formulário. Após o preenchimento, a equipe Atlas criará sua estratégia personalizada e você receberá os detalhes para iniciar seus 21 dias.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item anim-fade-up" id="faq-4">
-        <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
-          Posso participar mesmo começando agora do zero?
-          <div class="faq-icon"><i class="bi bi-plus-lg"></i></div>
-        </button>
-        <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
-          <div class="faq-answer-inner">
-            Sim! O Atlas Start foi pensado justamente para quem quer começar. Não importa seu ponto de partida — a estratégia será adaptada para você. Quanto mais honesto for no formulário, melhor será o resultado.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item anim-fade-up" id="faq-5">
-        <button class="faq-question" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
-          O pagamento é seguro?
-          <div class="faq-icon"><i class="bi bi-plus-lg"></i></div>
-        </button>
-        <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
-          <div class="faq-answer-inner">
-            Sim. O pagamento é processado pela Kiwify, uma das maiores plataformas de pagamento digital do Brasil, com certificação SSL e proteção total dos seus dados.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item anim-fade-up" id="faq-6">
-        <button class="faq-question" id="faq-q-6" aria-expanded="false" aria-controls="faq-a-6">
-          Existe suporte durante os 21 dias?
-          <div class="faq-icon"><i class="bi bi-plus-lg"></i></div>
-        </button>
-        <div class="faq-answer" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
-          <div class="faq-answer-inner">
-            Sim. Durante o desafio você terá acompanhamento da equipe Atlas para dúvidas e orientações. Você não estará sozinho nesse processo.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== FINAL CTA ===== -->
-<section class="section final-cta-section" id="cta-final">
-  <div class="final-cta-bg"></div>
-  <div class="container">
-    <div class="final-cta-content">
-      <h2 class="final-cta-title anim-fade-up" id="fcta-title">
-        Sua transformação começa<br>com uma <span>decisão.</span>
-      </h2>
-      <p class="final-cta-subtitle anim-fade-up" id="fcta-subtitle">
-        21 dias podem mudar sua relação com sua rotina e alimentação para sempre. O momento é agora.
-      </p>
-
-      <div class="final-cta-actions anim-fade-up" id="fcta-actions">
-        <a href="#pagamento" class="btn-primary" id="final-cta-btn">
-          Quero começar agora
-          <span class="arrow">→</span>
-        </a>
-        <a href="https://www.kevinlincoln.com.br/metodo-atlas.html" class="atlas-main-link" id="atlas-main-link" target="_blank" rel="noopener">
-          Conheça também o Atlas
-          <span>↗</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <a href="#" class="footer-logo"><img src="/desafio-atlas-start/assets/images/Prancheta 4@4x.png" alt="KL Logo" class="footer-logo-img"> <span>Nutri.Kevin</span></a>
-      <span class="footer-copy">© 2026 Atlas. Todos os direitos reservados.</span>
-      <span class="footer-credit" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; display: block; text-align: right;">Desenvolvido por <a href="https://www.cmkcogit.com.br/" target="_blank" rel="noopener" style="color: var(--text); text-decoration: none; font-weight: 600;">CMK Cogit</a></span>
-    </div>
-  </div>
-</footer>
-
-<!-- GSAP CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="/desafio-atlas-start/js/main.js"></script>
-<script src="/desafio-atlas-start/js/scroll-effects.js"></script>
+  <script src="/desafio-atlas-start/js/main.js"></script>
 </body>
 </html>
-
-
-
