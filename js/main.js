@@ -68,7 +68,7 @@ document.querySelectorAll('.faq-item').forEach((item) => {
   let intervalId = null;
   let isPaused = false;
   let isInView = true;
-  const INTERVAL = 3200; // 3.2 segundos entre trocas automáticas
+  const INTERVAL = 2500; // 2.5 segundos entre trocas automáticas
 
   // Pré-carregamento e tratamento de fallback para evitar piscadas
   slides.forEach((slide) => {
