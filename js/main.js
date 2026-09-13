@@ -54,3 +54,127 @@ document.querySelectorAll('.faq-item').forEach((item) => {
     button.setAttribute('aria-expanded', String(willOpen));
   });
 });
+
+
+/* ── Carrossel Automático de Refeições (Comida de Verdade) ── */
+(function initFoodCarousel() {
+  const carousel = document.getElementById('food-carousel');
+  if (!carousel) return;
+
+  const slides = Array.from(carousel.querySelectorAll('.food-carousel-slide'));
+  if (slides.length <= 1) return;
+
+  let currentIndex = 0;
+  let intervalId = null;
+  let isPaused = false;
+  let isInView = true;
+  const INTERVAL = 3200; // 3.2 segundos entre trocas automáticas
+
+  // Pré-carregamento e tratamento de fallback para evitar piscadas
+  slides.forEach((slide) => {
+    const img = slide.querySelector('img');
+    if (!img) return;
+
+    const preload = new Image();
+    preload.src = img.src;
+
+    img.addEventListener('error', function onImgError() {
+      img.removeEventListener('error', onImgError);
+      if (img.src.includes('/desafio-atlas-start/assets/images/')) {
+        img.src = img.src.replace('/desafio-atlas-start/assets/images/', './assets/images/');
+      } else if (img.src.includes('/desafio-atlas-start/assets/imagens/')) {
+        img.src = img.src.replace('/desafio-atlas-start/assets/imagens/', './assets/images/');
+      }
+    });
+  });
+
+  function goToSlide(nextIndex) {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (nextIndex + slides.length) % slides.length;
+    slides[currentIndex].classList.add('active');
+
+    // Pré-carrega a imagem do próximo índice
+    const followingIndex = (currentIndex + 1) % slides.length;
+    const followingImg = slides[followingIndex]?.querySelector('img');
+    if (followingImg && !followingImg.complete) {
+      const p = new Image();
+      p.src = followingImg.src;
+    }
+  }
+
+  function nextSlide() {
+    goToSlide(currentIndex + 1);
+  }
+
+  function startAutoplay() {
+    if (intervalId || isPaused || !isInView) return;
+    intervalId = setInterval(nextSlide, INTERVAL);
+  }
+
+  function stopAutoplay() {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+
+  // Pausa ao passar o mouse e retoma ao sair
+  carousel.addEventListener('mouseenter', () => {
+    isPaused = true;
+    stopAutoplay();
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    isPaused = false;
+    startAutoplay();
+  });
+
+  // Pausa com foco de teclado para acessibilidade
+  carousel.addEventListener('focusin', () => {
+    isPaused = true;
+    stopAutoplay();
+  });
+
+  carousel.addEventListener('focusout', () => {
+    isPaused = false;
+    startAutoplay();
+  });
+
+  // Pausa em dispositivos de toque
+  carousel.addEventListener('touchstart', () => {
+    isPaused = true;
+    stopAutoplay();
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', () => {
+    isPaused = false;
+    startAutoplay();
+  }, { passive: true });
+
+  // Pausa quando a aba fica em segundo plano
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopAutoplay();
+    } else if (!isPaused && isInView) {
+      startAutoplay();
+    }
+  });
+
+  // IntersectionObserver: só executa quando visível na tela
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        isInView = entry.isIntersecting;
+        if (isInView && !isPaused) {
+          startAutoplay();
+        } else {
+          stopAutoplay();
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(carousel);
+  } else {
+    startAutoplay();
+  }
+})();
